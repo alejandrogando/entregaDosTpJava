@@ -1,3 +1,9 @@
+package programa;
+
+import programa.ListaEquipos;
+import programa.ListaPartidos;
+import programa.ListaPronosticos;
+
 public class Participante {
     private int idParticipante;
     private String nombre;
@@ -10,13 +16,14 @@ public class Participante {
         this.listaPronosticos = listaPronosticos;
         this.puntaje = puntaje;
     }
-    public Participante (int idParticipante,String nombre){
+    public Participante (int idParticipante,String nombre,ListaPronosticos listaPronosticos){
         this.idParticipante = idParticipante;
         this.nombre = nombre;
+        this.listaPronosticos = new ListaPronosticos();
     }
-    public Participante(){
-        this.idParticipante = -1;
-        this.nombre = "";
+    public Participante(int idParticipante,String nombre){
+        this.idParticipante = idParticipante;
+        this.nombre = nombre;
     }
 
     public int getId() {

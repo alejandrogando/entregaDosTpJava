@@ -1,3 +1,7 @@
+package programa;
+
+import programa.Equipo;
+
 public class Partido {
     private int idPartido;
     private Equipo equipo1;

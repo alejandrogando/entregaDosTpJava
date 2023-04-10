@@ -1,3 +1,8 @@
+package programa;
+
+import programa.Equipo;
+import programa.Partido;
+
 public class Pronostico {
     private int id;
     private Equipo equipo;

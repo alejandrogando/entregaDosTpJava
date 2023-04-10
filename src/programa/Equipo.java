@@ -1,3 +1,5 @@
+package programa;
+
 public class Equipo {
     private int idEquipo;
     private String nombre;

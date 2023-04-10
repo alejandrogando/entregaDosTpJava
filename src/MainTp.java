@@ -1,4 +1,4 @@
-
+import programa.PronosticoDeportivo;
 
 public class MainTp {
     public static PronosticoDeportivo Game;

@@ -1,3 +1,9 @@
+package programa;
+
+import programa.Equipo;
+import programa.ListaEquipos;
+import programa.ListaPartidos;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,7 +19,7 @@ public class ListaPronosticos {
     }
     public ListaPronosticos(){
         this.pronosticos = new ArrayList<>();
-        this.nombreArchivo = " ";
+        this.nombreArchivo = "./src//archivos//pronosticos";
     }
 
     public ArrayList<Pronostico> getPronosticos() {

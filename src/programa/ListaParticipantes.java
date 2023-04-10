@@ -1,3 +1,5 @@
+package programa;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +11,7 @@ public class ListaParticipantes {
 
     public ListaParticipantes(){
         this.listaDeParticipantes = new ArrayList<>();
-        this.nombreArchivo = "";
+        this.nombreArchivo = "./src//archivos//participantes.csv";
     }
 
     public ArrayList<Participante> getListaDeParticipantes() {
@@ -74,6 +76,13 @@ public class ListaParticipantes {
     }
     public void calcularPuntaje(){
 
+    }
+    public String listar() {
+        String lista = "";
+        for (Participante par: this.listaDeParticipantes) {
+            lista += "\n" + par;
+        }
+        return lista;
     }
     @Override
     public String toString() {

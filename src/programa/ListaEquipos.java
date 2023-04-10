@@ -1,3 +1,7 @@
+package programa;
+
+import programa.Equipo;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,14 +12,11 @@ public class ListaEquipos {
     private List<Equipo> listaDeEquipos;
     private String nombreArchivo;
 
-    public ListaEquipos(List<Equipo> listaDeEquipos, String nombreArchivo) {
-        this.listaDeEquipos = listaDeEquipos;
-        this.nombreArchivo = "./equipos.csv";
-    }
+
 
     public ListaEquipos(){
         this.listaDeEquipos = new ArrayList<>();
-        this.nombreArchivo= "./equipos.csv";
+        this.nombreArchivo= "./src//archivos//equipos.csv";
     }
 
     public ArrayList<Equipo> getListaDeEquipos() {
@@ -82,7 +83,7 @@ public void cargaDeArchivo(){
 }
     public String listar() {
         String lista = "";
-        for (Equipo equipo: listaDeEquipos) {
+        for (Equipo equipo: this.listaDeEquipos) {
             lista += "\n" + equipo;
         }
         return lista;

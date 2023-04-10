@@ -1,3 +1,8 @@
+package programa;
+
+import programa.Equipo;
+import programa.ListaEquipos;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +14,7 @@ public class ListaPartidos {
 
     public ListaPartidos(){
         this.listaDePartidos = new ArrayList<>();
-        this.nombreArchivo = "";
+        this.nombreArchivo = "./src//archivos//partidos.csv";
     }
 
     public ArrayList<Partido> getListaDePartidos() {
